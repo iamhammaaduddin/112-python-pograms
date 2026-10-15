@@ -1,0 +1,11 @@
+# Problem 008: Read three numbers and check if all three are equal (use && )
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+# Python uses 'and' instead of &&
+if a == b and b == c:
+    print("All three numbers are equal")
+else:
+    print("All three numbers are not equal")
