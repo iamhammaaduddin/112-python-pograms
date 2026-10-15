@@ -1,0 +1,14 @@
+# Problem 070: Check if a number is a perfect number (sum of divisors == number)
+
+n = int(input("Enter a number: "))
+total = 0
+
+# Add all divisors except the number itself
+for i in range(1, n):
+    if n % i == 0:
+        total = total + i
+
+if total == n and n > 0:
+    print(n, "is a perfect number")
+else:
+    print(n, "is not a perfect number")

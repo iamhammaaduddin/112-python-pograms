@@ -1,0 +1,13 @@
+# Problem 071: Convert decimal to binary
+
+n = int(input("Enter a decimal number: "))
+
+if n == 0:
+    binary = "0"
+else:
+    binary = ""
+    while n > 0:
+        binary = str(n % 2) + binary
+        n = n // 2
+
+print("Binary:", binary)

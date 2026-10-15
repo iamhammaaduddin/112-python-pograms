@@ -1,0 +1,13 @@
+# Problem 059: Find LCM of two numbers
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+
+x = a
+y = b
+while y != 0:
+    x, y = y, x % y
+gcd = x
+
+lcm = (a * b) // gcd
+print("LCM:", lcm)
